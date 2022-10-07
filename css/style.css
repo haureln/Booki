@@ -51,9 +51,11 @@ header p{
 }
 /* NAV */
 nav{
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .nav-div-link div{
     display: none;
@@ -75,11 +77,11 @@ nav a:hover{
 }
 #position-link1{
     position: absolute;
-    top: 0;
+    top: -2em;
 }
 #position-link2{
     position: absolute;
-    top: 0;
+    top: -2em;
     right: -20px;
 }
 ul, li {
@@ -119,11 +121,12 @@ label{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     margin-top: 30px;
     max-width: 860px;
 }
+
 .filters-button{
     font-weight: bold;
     font-size: 17px;
@@ -151,7 +154,7 @@ label{
 .div-info{
     display: flex;
     align-items: center;
-    margin-bottom: 39px;
+    margin-bottom: 19px;
 }
 
 /* MAIN  */
@@ -168,6 +171,7 @@ main a{
 
 section,
 aside{
+    margin-top: 20px;
     background-color: var(--bg-grey);
     border-radius: var(--br-20px);
     font-size: 18px;
@@ -184,6 +188,9 @@ aside{
     flex-wrap: wrap;
 }
 /* CARD */
+.card-hide{
+    display: none;
+}
 .card-margin-end{
     margin-right: 30px;
 }
@@ -204,6 +211,12 @@ aside{
 .card h5{
     margin: 0;
 }
+.stars{
+    padding-bottom: 11px;
+}
+.more{
+    margin-top: 38px;
+}
 .aside-card{
     display: flex;
     margin-right: 0;
@@ -222,6 +235,9 @@ aside{
     margin-bottom: 30px;
 }
 /* ACTIVITIES */
+.div-activities{
+    margin-top: 38px;
+}
 .div-card-activities{
     display: flex;
     justify-content: space-between;
@@ -247,27 +263,28 @@ aside{
 /* FOOTER */
 footer{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 40px;
     margin-left: 0;
     background-color: var(--bg-grey);
+    padding: 45px 300px 45px 30px;
 
 }
 .footer-title{
     font-size: 18px;
     font-weight: 700;
 }
-footer p{
+footer a{
+    display: block;
+    text-decoration: none;
+    color: black;
     font-size: 16px;
     font-weight: 400;
 }
 
 @media screen and (min-width: 993px){
-    aside{
-        /* width: 420px; */
-        height: 625px;
-    }
-    section{
+    aside, section{
         height: 625px;
     }
 }
