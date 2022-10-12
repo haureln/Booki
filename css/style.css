@@ -168,7 +168,17 @@ main a{
     text-decoration: none;
     color: black;
 }
-
+section{
+    width: 60%;
+    padding: 10px;
+}
+aside{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
 section,
 aside{
     margin-top: 20px;
@@ -176,13 +186,15 @@ aside{
     border-radius: var(--br-20px);
     font-size: 18px;
     font-weight: 700;
-    padding: 41px 37px 34px 37px;
+    /* padding: 41px 37px 34px 37px; */
 }
+
 /* SECTION */
 .title{
     font-size: 22px;
 }
 .section-card-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -191,22 +203,32 @@ aside{
 .card-hide{
     display: none;
 }
-.card-margin-end{
-    margin-right: 30px;
-}
+
 .card{
-    /* margin: 16px 20px; */
+    margin-bottom: 1em;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--white-color);
     border-radius: var(--br-20px);
 }
+.test{
+    width: 100%;
+}
+.test2{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
 .card img{
-    width: 241px;
+    width: 98%;
     height: 124px;
     border: 3px solid var(--white-color);
     border-radius: 20px 20px 0px 0px;
 }
 .card-content{
-    padding-left: 16px;
+    padding: 0 0.5em;
 }
 .card h5{
     margin: 0;
@@ -219,20 +241,24 @@ aside{
 }
 .aside-card{
     display: flex;
+    justify-content: center;
     margin-right: 0;
-    width: 342px;
+    width: 90%;
     height: 144px;
     border-radius: var(--br-20px);
     background-color: var(--white-color);
 }
 .aside-card img{
     border: 3px solid var(--white-color);
-    width: 133px;
+    width: 100%;
     height: 140px;
     border-radius: 20px 0px 0px 20px;
 }
 .aside-card-margin-bottom{
     margin-bottom: 30px;
+}
+.aside-card-content{
+    padding: 0 1em;
 }
 /* ACTIVITIES */
 .div-activities{
@@ -283,11 +309,11 @@ footer a{
     font-weight: 400;
 }
 
-@media screen and (min-width: 993px){
+/* @media screen and (min-width: 993px){
     aside, section{
         height: 625px;
     }
-}
+} */
 @media screen and (max-width: 992px)
 {
     header{
@@ -322,6 +348,7 @@ footer a{
         max-width: 880px;
     }
     .div-main{
+        width: 100%;
         display: flex;
         justify-content: center;
     }
