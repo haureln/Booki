@@ -14,15 +14,20 @@ body{
     /* var border */
     --br-20px: 20px;
 
+    /* var shadow */
+    --box-shadow: 0px 0px 10px rgb(192, 192, 192);
 }
 
 
-h1, h3{
+h1{
     font-size: 22px;
     font-weight: 700;
 }
 h1{
     margin-bottom: 0;
+}
+h2{
+    font-size: 16px;
 }
 h5{
     font-size: 16px;
@@ -51,6 +56,7 @@ header p{
 }
 /* NAV */
 nav{
+
     margin-top: 2em;
     display: flex;
     justify-content: space-between;
@@ -58,37 +64,36 @@ nav{
 
 }
 .nav-div-link div{
-    display: none;
     position: relative;
 }
 .nav-div-link div:target {
+    
     display: block;
 }
 nav ul {
     display:inline-flex;
     justify-content:flex-end;
 }
-nav a{
+ nav a{
     text-decoration: none;
     color: black;
 }
 nav a:hover{
+    border-top: 5px blue solid;
+    margin-top: 5em;
     color: var(--blue-color);
-}
+} 
 #position-link1{
     position: absolute;
-    top: -2em;
 }
 #position-link2{
     position: absolute;
-    top: -2em;
-    right: -20px;
 }
-ul, li {
+nav ul, li {
     list-style-type:none;
   }
   
-li {
+nav li {
     width:auto;
     margin:0 25px;
     cursor: pointer;
@@ -113,28 +118,31 @@ li {
 input{
     max-height: 46px;
 }
-label{
+span{
     font-size: 18px;
     font-weight: bold;
 }
 .filters-div{
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; 
     align-items: center;
-    margin-top: 30px;
-    max-width: 860px;
 }
-
+.ul-filters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+} 
 .filters-button{
     font-weight: bold;
     font-size: 17px;
-    padding: 13px;
+    padding: 10px;
+    margin: 2px;
     border-radius: 25px;
-    min-height: 50px;
     background-color: var(--white-color);
-    color: var(--blue-color);
+    color: black;
     border: 2px solid var(--dark-grey);
 }
 .filters-button i{
@@ -154,7 +162,7 @@ label{
 .div-info{
     display: flex;
     align-items: center;
-    margin-bottom: 19px;
+    margin-bottom: 1.5em;
 }
 
 /* MAIN  */
@@ -163,30 +171,36 @@ label{
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap;
+    margin-bottom: 4em;
 }
 main a{
     text-decoration: none;
     color: black;
 }
-section{
+.section-top{
     width: 60%;
-    padding: 10px;
 }
+
 aside{
     width: 30%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
 }
-section,
+.title-aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-top,
 aside{
     margin-top: 20px;
     background-color: var(--bg-grey);
     border-radius: var(--br-20px);
     font-size: 18px;
     font-weight: 700;
-    /* padding: 41px 37px 34px 37px; */
+    padding: 2em 1em;
 }
 
 /* SECTION */
@@ -198,20 +212,18 @@ aside{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 2.5em;
 }
 /* CARD */
-.card-hide{
-    display: none;
-}
-
 .card{
+    line-height: 0.5em;
     margin-bottom: 1em;
-    min-width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--white-color);
     border-radius: var(--br-20px);
+    box-shadow: var(--box-shadow);
 }
 .test{
     width: 100%;
@@ -219,7 +231,6 @@ aside{
 .test2{
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
 }
 .card img{
     width: 98%;
@@ -233,65 +244,70 @@ aside{
 .card h5{
     margin: 0;
 }
-.stars{
-    padding-bottom: 11px;
-}
+/* //ANCHOR */
 .more{
-    margin-top: 38px;
+    margin-top: 2em; 
 }
 .aside-card{
     display: flex;
     justify-content: center;
     margin-right: 0;
-    width: 90%;
-    height: 144px;
+    width: 100%;
+    height: 100%;
     border-radius: var(--br-20px);
     background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1.5em;
 }
 .aside-card img{
     border: 3px solid var(--white-color);
-    width: 100%;
-    height: 140px;
+    width: 137px;
+    height: 150px;
     border-radius: 20px 0px 0px 20px;
 }
-.aside-card-margin-bottom{
-    margin-bottom: 30px;
-}
+
 .aside-card-content{
-    padding: 0 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0.5em;
 }
+
 /* ACTIVITIES */
-.div-activities{
-    margin-top: 38px;
-}
+
 .div-card-activities{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .simple-card{
-    padding: 0;
-    width: 302px;
+    margin-top: 1em;
     height: 444px;
     background-color: var(--white-color);
     border-radius: 20px;
-    border:1px solid var(--bg-grey);
+    box-shadow: var(--box-shadow);
 }
 .simple-card img{
-    height: 389px;
-    width: 302px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    height: 80%;
+    width: 300px;
+    border-top-right-radius: var(--br-20px);
+    border-top-left-radius: var(--br-20px);
 } 
 .simple-card h5{
     margin: 20px;
+}
+.text-simple-card{
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 1em;
 }
 /* FOOTER */
 footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 2.5em;
     margin-left: 0;
     background-color: var(--bg-grey);
     padding: 45px 300px 45px 30px;
@@ -308,13 +324,107 @@ footer a{
     font-size: 16px;
     font-weight: 400;
 }
+@media screen and (max-width: 909px){
+    .section-card-container{
+        justify-content: center;
+    }
+    .card{
+        margin: 1em;
+    }
+}
+@media screen and (max-width: 992px){
+    .section-top,
+    aside{
+        width: 100%;
+    }
+    .simple-card img{
+        width: 182px;
+    } 
+    .simple-card{
+        height: 267px;
+    }
+    .container-aside-card{
+        display: flex;
+        justify-content: space-between;
 
+    }
+    .aside-card{
+        width: 30%;
+    }
+    .aside-card img{
+        width: 105px;
+        height: 96%;
+    }
+    @media screen and (max-width: 767px){
+        nav{
+            flex-direction: column;
+        }
+        nav ul{
+            padding: 0;
+        }
+        nav li{
+            padding: 0;
+            margin: 0 1em 0 0;
+        }
+        nav a:hover{
+            border-top: none;
+            border-bottom: 5px blue solid;
+        }
+        .filters-div{
+            flex-direction: column;
+            align-items: start;
+        }
+        .ul-filters{
+            padding: 0;
+            width: 80%;
+            justify-content: start;
+        }
+        .filters-button{
+            font-size: 11px;
+        }
+        .section-top{
+            background-color: white;
+        }
+        .div-main{
+            flex-direction: column-reverse;
+        }
+        .card{
+            width: 100%;
+        }
+        .div-card-activities{
+            justify-content: center;
+        }
+        .simple-card{
+            width: 100%;
+        }
+        .simple-card img{
+            width: 100%;
+        }
+    }
+    /* .aside{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .aside-card{
+        width: 252px;
+        height: 144px;
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-bottom: 20px;
+    }
+    .aside-card img{
+        width: 101px;
+        height: 140px;
+    } */
+}
 /* @media screen and (min-width: 993px){
     aside, section{
         height: 625px;
     }
 } */
-@media screen and (max-width: 992px)
+/* @media screen and (max-width: 992px)
 {
     header{
         max-width: 880px;
@@ -341,28 +451,27 @@ footer a{
         width: 101px;
         height: 140px;
     }
-    /* .aside h5{
-        font-size: 16px;
-    } */
-    section{
+    */
+    /* section{
         max-width: 880px;
     }
     .div-main{
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
     }
     .div-activities{
-        padding: 41px 26px 34px 26px;
+        padding: 41px 26px 34px 26px; */
         /* max-width: 880px; */
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .div-card-activities{
-        max-width: 880px;
+        max-width: 880px; */
         /* justify-content: center; */
-    }
+    /* }
     .simple-card{
         width: 182px;
         height: 267px;
@@ -375,4 +484,4 @@ footer a{
         padding: 41px 26px 34px 26px;
         max-width: 880px;
     }
-}
+} */
