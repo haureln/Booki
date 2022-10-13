@@ -3,6 +3,7 @@ body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     margin: 0 2em;
+    max-width: 1400px;
 
     /* var color */
     --blue-color : #0065FC;
@@ -100,6 +101,9 @@ nav li {
 }
 
 /* SEARCH LOCATION */
+.container-search-button{
+    display: flex;
+}
 .location-search{
     background: var(--bg-grey);
     border: 1px solid var(--bg-grey);
@@ -113,6 +117,7 @@ nav li {
     border: 1px solid var(--blue-color);
     border-radius: 0px 15px 15px 0px;
     height: 52px;
+    color: var(--white-color);
 }
 
 input{
@@ -136,6 +141,7 @@ span{
     align-items: center;
 } 
 .filters-button{
+    cursor: pointer;
     font-weight: bold;
     font-size: 17px;
     padding: 10px;
@@ -187,6 +193,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .title-aside{
     display: flex;
@@ -198,7 +205,7 @@ aside{
     margin-top: 20px;
     background-color: var(--bg-grey);
     border-radius: var(--br-20px);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     padding: 2em 1em;
 }
@@ -216,7 +223,9 @@ aside{
 }
 /* CARD */
 .card{
-    line-height: 0.5em;
+    width: 30%;
+    /* height: 250px; */
+    /* line-height: 01em; */
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
@@ -225,13 +234,16 @@ aside{
     border-radius: var(--br-20px);
     box-shadow: var(--box-shadow);
 }
+.card h3{
+    margin-bottom: 0;
+}
+/* .card p{
+    line-height: 00.5em;
+} */
 .test{
     width: 100%;
 }
-.test2{
-    display: flex;
-    justify-content: center;
-}
+
 .card img{
     width: 98%;
     height: 124px;
@@ -250,9 +262,8 @@ aside{
 }
 .aside-card{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     margin-right: 0;
-    width: 100%;
     height: 100%;
     border-radius: var(--br-20px);
     background-color: var(--white-color);
@@ -282,6 +293,7 @@ aside{
     flex-wrap: wrap;
 }
 .simple-card{
+    width: 22%;
     margin-top: 1em;
     height: 444px;
     background-color: var(--white-color);
@@ -290,7 +302,8 @@ aside{
 }
 .simple-card img{
     height: 80%;
-    width: 300px;
+    width: 100%;
+    margin: auto;
     border-top-right-radius: var(--br-20px);
     border-top-left-radius: var(--br-20px);
 } 
@@ -337,25 +350,41 @@ footer a{
     aside{
         width: 100%;
     }
-    .simple-card img{
-        width: 182px;
-    } 
-    .simple-card{
+    /* .simple-card img{
+        width: 100%;
+        margin: auto;
+    }  */
+    /* .simple-card{
         height: 267px;
-    }
+    } */
     .container-aside-card{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
     }
     .aside-card{
+        font-size: 14px;
         width: 30%;
+        height: 180px;
     }
     .aside-card img{
         width: 105px;
         height: 96%;
     }
+    @media screen and (max-width: 809px) {
+        .container-aside-card{
+            justify-content: center;
+        }
+    }
     @media screen and (max-width: 767px){
+        body{
+            margin: 0;
+        }
+        
+        header{
+            margin: 0 1.5em;
+        }
         nav{
             flex-direction: column;
         }
@@ -369,6 +398,9 @@ footer a{
         nav a:hover{
             border-top: none;
             border-bottom: 5px blue solid;
+        }
+        .container-search-button{
+            justify-content: center;
         }
         .filters-div{
             flex-direction: column;
@@ -384,22 +416,51 @@ footer a{
         }
         .section-top{
             background-color: white;
+            padding: 0;
         }
         .div-main{
+            
             flex-direction: column-reverse;
         }
         .card{
-            width: 100%;
+            width: 50%;
+        }
+        .more{
+            display: none;
         }
         .div-card-activities{
             justify-content: center;
         }
+
         .simple-card{
+            margin: 1em;
             width: 100%;
+            height: 250px;
         }
         .simple-card img{
             width: 100%;
+            height: 70%;
         }
+        aside{
+            padding: 0;
+        }
+        .aside-card{
+            width: 96%;
+        }
+        .title,
+        .title-aside{
+            padding: 0 1em;
+        }
+        .container-aside-card{
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width: 623px){
+        .card{
+            /* margin: 0 0 0.5em 0; */
+            width: 100%;
+        }
+  
     }
     /* .aside{
         display: flex;
