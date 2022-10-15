@@ -37,6 +37,10 @@ h3{
 p{
     font-weight: 400;
 }
+img{
+    object-fit: cover;
+}
+
 .sub-title{
     margin: 8px 0 20px 0;
 }
@@ -124,6 +128,9 @@ input{
     color: var(--white-color);
     font-weight: bold;
     font-size: 18px;
+}
+.search-location-button-mobile{
+    display: none;
 }
 .search-location-button label{
     padding: 1em;
@@ -246,6 +253,7 @@ aside{
     height: 120px;
     border: 3px solid var(--white-color);
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 .card-content{
     padding: 0 0.5em;
@@ -274,7 +282,7 @@ aside{
     margin-top: 0;
 }
 .aside-card img{
-    object-fit: cover;
+    /* object-fit: cover; */
     border: 3px solid var(--white-color);
     width: 137px;
     height: 144px;
@@ -307,7 +315,7 @@ aside{
     box-shadow: var(--box-shadow);
 }
 .simple-card img{
-    object-fit: cover;
+    /* object-fit: cover; */
     height: 389px;
     width: 100%;
     margin: auto;
@@ -376,7 +384,7 @@ footer a{
         height: 144px;
     }
     .aside-card img{
-        object-fit: cover;
+        /* object-fit: cover; */
         width: 105px;
         height: 96%;
     }
@@ -399,6 +407,9 @@ footer a{
         }
         .body-content{
             margin: 0;
+        }
+        .cta-top{
+            margin: 0 2em 0 1.5em;
         }
         h2{
             font-size: 18px;
@@ -440,6 +451,22 @@ footer a{
         .container-search-button{
             justify-content: center;
         }
+        .search-location-button{
+            display: none;
+        }
+        .search-location-button-mobile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            background: var(--blue-color);
+            border: 1px solid var(--blue-color);
+            border-radius: 0px 15px 15px 0px;
+            height: 50px;
+            color: var(--white-color);
+            font-weight: bold;
+            font-size: 18px;
+        }
         .filters-div{
             flex-direction: column;
             align-items: start;
@@ -451,11 +478,11 @@ footer a{
         }
         .filters-button{
             font-size: 11px;
-            width: 35%;
+            width: 36%;
         }
         .filters-button i{
-            font-size: 18px;
-            padding-right: 5px;
+            font-size: 11px;
+            padding-right: 1px;
         }
         .section-top{
             background-color: var(--white-color);
@@ -466,6 +493,9 @@ footer a{
         }
         .more{
             display: none;
+        }
+        .container-aside-card{
+            margin-bottom: 2em;
         }
         .card{
             width: 344px;
@@ -479,7 +509,7 @@ footer a{
             
         }
         .simple-card img{
-            object-fit: cover;
+            /* object-fit: cover; */
             width: 100%;
             height: 134px;
         }
@@ -500,6 +530,14 @@ footer a{
         }
         .title-aside{
             margin: 20px 0 0px 0;
+        }
+        .section-top h2{
+            margin-bottom: 0;
+        }
+        .title-activities{
+            margin: 0 0 0 1em;
+            max-width: 100px;
+            font-size: 22px;
         }
 
     }
