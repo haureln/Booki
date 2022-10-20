@@ -40,7 +40,9 @@ p{
 img{
     object-fit: cover;
 }
-
+input:focus {
+    outline:  none;
+}
 .sub-title{
     margin: 8px 0 20px 0;
 }
