@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="shortcut icon" type="image/png" href="images/logo/Booki-2.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/logo/Booki-2.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Booki</title>
 </head>
@@ -22,8 +22,8 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#link1">Hébergements</a> </li>
-                        <li><a href="#link2">Activités</a></li>
+                        <li id="link1"><a href="#location">Hébergements</a> </li>
+                        <li id="link2"><a href="#activities">Activités</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,17 +37,17 @@
                         <p><i class="fa-sharp fa-solid fa-location-dot"></i></p> 
                     </div> 
                      <input name="search" id="search" type="text">
-                     <label for="search"><button class="search-location-button">Rechercher</button></label>
-                     <label for="search"><button class="search-location-button-mobile"><i class="fa-solid fa-magnifying-glass"></i></button></label>
+                     <label for="searchButtonDesktop"><button id="searchButtonDesktop" class="search-location-button">Rechercher</button></label>
+                     <label for="searchButtonMobile"><button id="searchButtonMobile" class="search-location-button-mobile"><i class="fa-solid fa-magnifying-glass"></i></button></label>
                 </div>
     
                 <div class="filters-div">
                     <span>Filtres</span>
                         <ul class="ul-filters">
-                            <li class="filters-button"><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
-                            <li class="filters-button"><i class="fa-solid fa-person"></i>Familial</li>
-                            <li class="filters-button"><i class="fa-solid fa-heart"></i>Romantique</li>
-                            <li class="filters-button"><i class="fa-solid fa-dog"></i>Animaux autorisés</li>
+                            <li class="filters-button"><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Economique</a></li>
+                            <li class="filters-button"><a href="#"><i class="fa-solid fa-person"></i>Familial</a></li>
+                            <li class="filters-button"><a href="#"><i class="fa-solid fa-heart"></i>Romantique</a></li>
+                            <li class="filters-button"><a href="#"><i class="fa-solid fa-dog"></i>Animaux autorisés</a></li>
                         </ul>              
                 </div>
                 <div class="div-info">
@@ -59,12 +59,12 @@
         <!--  -->
         <main>
             <div class="box-section-aside">
-                <section class="section-top" id="link1">
+                <section class="section-top" id="location">
                     <h2 class="title">Hébergements à Marseille</h2>
                     <div class="section-card-container">
     
                         <a href="#" class="card">
-                            <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="Auberge La Canebière">
+                            <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
                             <div class="card-content">
                                 <h3>Auberge La Canebière</h3>
                                 <p>Nuit à partir de 25€</p>
@@ -79,7 +79,7 @@
                         </a>
     
                         <a href="#" class="card" >
-                            <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg"alt="Hôtel du port">
+                            <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                             <div class="card-content">
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
@@ -109,7 +109,7 @@
                         </a>              
                     
                         <a href="#" class="card">
-                            <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg"alt="Hôtel de la mer">
+                            <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                             <div class="card-content">
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
@@ -124,7 +124,7 @@
                         </a>
     
                         <a href="#" class="card" >
-                            <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"alt="Auberge Le Panier">
+                            <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                             <div class="card-content">
                                 <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de 23€</p>
@@ -139,7 +139,7 @@
                         </a>
     
                         <a href="#" class="card">
-                            <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"alt="Hôtel Chez Amina">
+                            <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina">
                             <div class="card-content">
                                 <h3>Hôtel Chez Amina</h3>
                                 <p>Nuit à partir de 96€</p>
@@ -231,7 +231,7 @@
             </div>
     
             <section class="div-activities">
-                <h2 class="title-activities" id="link2">Activités à Marseille</h2>
+                <h2 class="title-activities" id="activities">Activités à Marseille</h2>
                 <div class="div-card-activities">
                     <a href="#" class="simple-card">
                         <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
@@ -256,19 +256,19 @@
         <footer>
             <div>
                 <h4 class="footer-title">A propos</h4>
-                <a>Fonctionnement du site</a>
-                <a>Conditions générales</a>
-                <a>Données et confidentialités</a>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales</a>
+                <a href="#">Données et confidentialités</a>
             </div>
             <div>
                 <h4 class="footer-title">Nos hébergements</h4>
-                <a>Charte qualité</a>
-                <a>Proposer votre hôtel</a>
+                <a href="#">Charte qualité</a>
+                <a href="#">Proposer votre hôtel</a>
             </div>
             <div>
                 <h4 class="footer-title">Assistance</h4>
-                <a>Centre d'aide</a>
-                <a>Nous contacter</a>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
             </div>
         </footer>
     </div>
