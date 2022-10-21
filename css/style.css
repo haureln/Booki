@@ -15,7 +15,7 @@ body{
     /* var border */
     --br-20px: 20px;
     /* var shadow */
-    --box-shadow: 0px 0px 10px rgb(192, 192, 192);
+    --box-shadow: 0px 0px 11px rgb(122, 122, 122);
 }
 .body-content{
     min-width: 350px;
@@ -72,12 +72,6 @@ nav ul {
     text-decoration: none;
     color: black;
 }
-/* nav a:hover{
-    line-height: 2em;
-    border-top: 5px var(--blue-color) solid;
-    margin-top: 5em;
-    color: var(--blue-color);
-}  */
 nav a{
     line-height: 2em;
 }
@@ -186,11 +180,16 @@ span{
      background-color: var(--light-blue);
 }
 .circle{
-     border: 1px solid var(--dark-grey);
-     padding: 5px;
-     margin-right: 1em;
-     border-radius: 100%;
-     color: var(--blue-color);
+    height: 20px; 
+	width: 20px; 
+	border: 1px solid var(--dark-grey);
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: var(--blue-color);
+    margin-right: 10px;
 }
 .div-info{
     display: flex;
@@ -199,7 +198,6 @@ span{
 }
 /* MAIN  */
 .box-section-aside{
-    /* border: red solid; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -210,7 +208,6 @@ main a{
     color: black;
 }
 .section-top{
-    /* border: yellow solid; */
     width: 60%;
 }
 aside{
@@ -251,9 +248,13 @@ aside{
     justify-content: space-between;
     background-color: var(--white-color);
     border-radius: var(--br-20px);
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 0px 11px rgb(223, 222, 222);
+    transition: transform .5s, box-shadow 1s;
 }
-
+.card:hover{
+    transform: scale(1.02) perspective(0px);
+    box-shadow: var(--box-shadow);  
+}
 .card h3{
     margin: 4px 0 0 0;
 }
@@ -275,7 +276,6 @@ aside{
 }
 .more{
     font-weight: 700;
-    /* margin-top: 2em;  */
     font-size: 18px;
 }
 .aside-card{
@@ -284,8 +284,13 @@ aside{
     margin-right: 0;
     border-radius: var(--br-20px);
     background-color: var(--white-color);
-    box-shadow: var(--box-shadow);
     margin-bottom: 1.5em;
+    box-shadow: 0px 0px 11px rgb(223, 222, 222);
+    transition: transform .5s, box-shadow 1s;
+}
+.aside-card:hover{
+    transform: scale(1.02) perspective(0px);
+    box-shadow: var(--box-shadow); 
 }
 .aside-card h3{
     margin-bottom: 5px;
@@ -294,7 +299,6 @@ aside{
     margin-top: 0;
 }
 .aside-card img{
-    /* object-fit: cover; */
     border: 3px solid var(--white-color);
     width: 137px;
     height: 144px;
@@ -307,9 +311,7 @@ aside{
     padding: 0 1em;
 }
 /* ACTIVITIES */
-/* .title-activities{
 
-} */
 .div-activities{
     margin-bottom: 4em;
 }
@@ -321,13 +323,16 @@ aside{
 .simple-card{
     width: 22%;
     margin-top: 1em;
-
     background-color: var(--white-color);
     border-radius: 20px;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 0px 11px rgb(223, 222, 222);
+    transition: transform .5s, box-shadow 1s;
+}
+.simple-card:hover{
+    transform: scale(1.02) perspective(0px);
+    box-shadow: var(--box-shadow);  
 }
 .simple-card img{
-    /* object-fit: cover; */
     height: 389px;
     width: 100%;
     margin: auto;
@@ -402,7 +407,6 @@ footer a{
         height: 144px;
     }
     .aside-card img{
-        /* object-fit: cover; */
         width: 105px;
         height: 96%;
     }
@@ -537,7 +541,6 @@ footer a{
             
         }
         .simple-card img{
-            /* object-fit: cover; */
             width: 100%;
             height: 134px;
         }
@@ -559,19 +562,14 @@ footer a{
         .title-aside{
             margin: 20px 0 0px 0;
         }
-        .section-top h2{
-            margin-bottom: 0;
+        .section-top .title{
+            margin: 1em 0 0.5em 0;
         }
         .title-activities{
             margin: 0 0 0 1em;
-            max-width: 100px;
+            max-width: 120px;
             font-size: 22px;
         }
-
     }
-    /* @media screen and (max-width: 623px){
-        .card{
-            width: 100%;
-        }
-    } */
+
 
