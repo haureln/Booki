@@ -130,12 +130,11 @@ input{
     font-weight: bold;
     font-size: 18px;
 }
-.search-location-button-mobile{
-    display: none;
+.search-location-button::before{
+    content:"Rechercher";
+    
 }
-.search-location-button label{
-    padding: 1em;
-}
+
 input{
     max-height: 46px;
 }
@@ -443,14 +442,14 @@ footer a{
             left:50%;
             width:50%
         }
+        input {
+            width: 300px;
+        }
         .cta-top{
             margin: 0 2em 0 1.5em;
         }
         h2{
             font-size: 18px;
-        }
-        header{
-            margin: 0 0.5em;
         }
         .div-header{
             flex-direction: column;
@@ -483,20 +482,15 @@ footer a{
             justify-content: center;
         }
         .search-location-button{
-            display: none;
-        }
-        .search-location-button-mobile{
             display: flex;
             align-items: center;
             justify-content: center;
             width: 50px;
-            background: var(--blue-color);
-            border: 1px solid var(--blue-color);
             border-radius: 0px 15px 15px 0px;
             height: 50px;
-            color: var(--white-color);
-            font-weight: bold;
-            font-size: 18px;
+        }
+        .search-location-button::before{
+            content:url(../images/logo/glass.png);
         }
         .filters-div{
             flex-direction: column;
